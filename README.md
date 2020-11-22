@@ -37,11 +37,11 @@ The purpose of this analysis was to research temperature trends in Oahu in order
 * The max and min for Decemeber data are outliers
 * Judging by the data analysis, a year-round surf shop and ice cream shop could be viable business. 
 * Would also want to check precipitation for these months because rain and tsunamis could be detrimental to the business. the query for this data is as follows:
-``` june_precip_results = session.query(Measurement.date,Measurement.prcp).\
+``` 
+june_precip_results = session.query(Measurement.date,Measurement.prcp).\
                   filter(extract('month', Measurement.date)==6).all()
-print(june_precip_results)
 ```
-```dec_precip_results = session.query(Measurement.date,Measurement.prcp).\
+```
+dec_precip_results = session.query(Measurement.date,Measurement.prcp).\
                   filter(extract('month', Measurement.date)==12).all()
-print(dec_precip_results)
 ```
